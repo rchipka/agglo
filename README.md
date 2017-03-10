@@ -40,35 +40,34 @@ agglo(db.get('users'), {
 
 
 ## options
->
->### maxLinkage
->
->Limits clustering to a maximum linkage (distance).
->
->Default: Infinity
->
->Note: This will likely change the number of returned levels
->
->### linkage
->
->Specify the linkage function to use (default: "average")
->
->#### "average"
->
->Merge clusters based on the average distance between items in each cluster.
->
->#### "complete"
->
->Merge clusters based on the largest distance between items in each cluster.
->
->#### "single"
->
->Merge clusters based on the smallest distance between items in each cluster.
->
->#### function(source, target)
->
->A custom linkage function that returns the distance between the `source` cluster and the `target` cluster.
->
+
+* *maxLinkage*
+
+ Limits clustering to a maximum linkage (distance).
+
+ Default: Infinity
+
+ Note: This will likely change the number of returned levels
+
+* *linkage*
+
+ Specifies the linkage function to use (default: "average")
+
+#### "average"
+
+Merge clusters based on the average distance between items in each cluster.
+
+#### "complete"
+
+Merge clusters based on the largest distance between items in each cluster.
+
+#### "single"
+
+Merge clusters based on the smallest distance between items in each cluster.
+
+#### function(source, target)
+
+A custom linkage function that returns the distance between the `source` cluster and the `target` cluster.
 
 ## levels
 
