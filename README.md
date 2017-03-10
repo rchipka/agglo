@@ -53,42 +53,43 @@ agglo(db.get('users'), {
 
  Specifies the linkage function to use (default: "average")
 
- #### "average"
-
- Merge clusters based on the average distance between items in each cluster.
-
- #### "complete"
-
- Merge clusters based on the largest distance between items in each cluster.
-
- #### "single"
-
- Merge clusters based on the smallest distance between items in each cluster.
-
- #### function (source, target)
-
- A custom linkage function that returns the distance between the `source` cluster and the `target` cluster.
+ * "average"
  
- The `source` and `target` look objects like this:
+   Merge clusters based on the average distance between items in each cluster.
+
+ * "complete"
+
+   Merge clusters based on the largest distance between items in each cluster.
+
+ * "single"
+
+   Merge clusters based on the smallest distance between items in each cluster.
+
+ * function (source, target)
+
+   A custom linkage function that returns the distance between the `source` cluster and the `target` cluster.
  
- ```javascript
- {
-    index: 5,      // the value's index in the original input
-    count: 2,      // the number of values in this cluster
-    links: [],     // an array of numeric links to every preceeding input value
-    linkage: 1.5,  // the linkage between this cluster and the last value to merge into it
-    cluster: []    // an array of input values
- }
- ```
-* distance
+   The `source` and `target` look objects like this:
+ 
+   ```javascript
+    {
+       index: 5,      // the value's index in the original input
+       count: 2,      // the number of values in this cluster
+       links: [],     // an array of numeric links to every preceeding input value
+       linkage: 1.5,  // the linkage between this cluster and the last value to merge into it
+       cluster: []    // an array of input values
+     }
+    ```
+* *distance*
 
  Specifies the function to use for measing the distance between each input.
  
- #### "euclidean"
- #### "manhattan"
- #### "max"
- #### function (a, b)
-  A custom distance function that compares input value A to input value B and returns a number (usually between 0 and 1).
+ * "euclidean"
+ * "manhattan"
+ * "max"
+ * function (a, b)
+ 
+   A custom distance function that compares input value A to input value B and returns a number (usually between 0 and 1).
 
 ## levels
 
