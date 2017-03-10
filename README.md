@@ -82,7 +82,7 @@ agglo(db.get('users'), {
     ```
 * *distance*
 
- Specifies the function to use for measing the distance between each input.
+ Specifies the function to use for measuring the distance between each input.
  
  * "euclidean"
  * "manhattan"
