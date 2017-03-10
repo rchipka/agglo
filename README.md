@@ -13,7 +13,7 @@ An array of numbers to measure the distance between.
 agglo([0, 1, 2]);
 ```
 
-You can also use an array of arrays of numbers.
+To measure multiple dimensions, use multiple arrays of numbers.
 
 ```javascript
 agglo([
