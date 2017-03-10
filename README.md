@@ -65,7 +65,7 @@ agglo(db.get('users'), {
 
  Merge clusters based on the smallest distance between items in each cluster.
 
- #### function(source, target)
+ #### function (source, target)
 
  A custom linkage function that returns the distance between the `source` cluster and the `target` cluster.
  
@@ -80,6 +80,15 @@ agglo(db.get('users'), {
     cluster: []    // an array of input values
  }
  ```
+* distance
+
+ Specifies the function to use for measing the distance between each input.
+ 
+ #### "euclidean"
+ #### "manhattan"
+ #### "max"
+ #### function (a, b)
+  A custom distance function that compares input value A to input value B and returns a number (usually between 0 and 1).
 
 ## levels
 
