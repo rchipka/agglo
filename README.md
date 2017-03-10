@@ -2,10 +2,10 @@
 Fast hierarchical agglomerative clustering in Javascript
 
 ```javascript
-agglo(inputs, [options]);
+var levels = agglo(inputs, [options]);
 ```
 
-### inputs
+## inputs
 
 An array of numbers to measure the distance between.
 
@@ -32,4 +32,33 @@ agglo(db.get('users'), {
 ```
 
 
-### options
+## options
+
+
+## levels
+
+Agglo will return an array of `inputs.length - 1` levels. The first level represents the first two clusters to merge. The last level represents the last two clusters to merge.
+
+```javascript
+[
+  { // level 1
+    linkage: 2,
+    source: {
+      index: 0,
+      value: [5, 13]
+    },
+    target: {
+      index: 2,
+      value: [6, 12]
+    },
+    clusters: [
+      [[9, 22]],
+      [[5, 13], [6, 12]],
+      ...
+    ]
+  },
+  ...
+]
+```
+
+### levels.fit(regression, callback)
