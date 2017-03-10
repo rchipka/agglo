@@ -69,17 +69,16 @@ agglo(db.get('users'), {
 
    A custom linkage function that returns the distance between the `source` cluster and the `target` cluster.
  
-   The `source` and `target` look objects like this:
- 
-   ```javascript
-    {
-       index: 5,      // the value's index in the original input
-       count: 2,      // the number of values in this cluster
-       links: [],     // an array of numeric links to every preceeding input value
-       linkage: 1.5,  // the linkage between this cluster and the last value to merge into it
-       cluster: []    // an array of input values
-     }
-    ```
+    The `source` and `target` look objects like this:
+    ```javascript
+     {
+        index: 5,      // the value's index in the original input
+        count: 2,      // the number of values in this cluster
+        links: [],     // an array of numeric links to every preceeding input value
+        linkage: 1.5,  // the linkage between this cluster and the last value to merge into it
+        cluster: []    // an array of input values
+      }
+     ``` 
 * *distance*
 
  Specifies the function to use for measuring the distance between each input.
