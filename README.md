@@ -1,6 +1,13 @@
-# agglo
+# Agglo
 Fast hierarchical agglomerative clustering in Javascript
 
+
+## Install
+
+`npm install agglo`
+
+
+## Usage
 ```javascript
 var levels = agglo(inputs, [options]);
 ```
