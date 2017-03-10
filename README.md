@@ -53,21 +53,21 @@ agglo(db.get('users'), {
 
  Specifies the linkage function to use (default: "average")
 
-#### "average"
+ #### "average"
 
-Merge clusters based on the average distance between items in each cluster.
+ Merge clusters based on the average distance between items in each cluster.
 
-#### "complete"
+ #### "complete"
 
-Merge clusters based on the largest distance between items in each cluster.
+ Merge clusters based on the largest distance between items in each cluster.
 
-#### "single"
+ #### "single"
 
-Merge clusters based on the smallest distance between items in each cluster.
+ Merge clusters based on the smallest distance between items in each cluster.
 
-#### function(source, target)
+ #### function(source, target)
 
-A custom linkage function that returns the distance between the `source` cluster and the `target` cluster.
+ A custom linkage function that returns the distance between the `source` cluster and the `target` cluster.
 
 ## levels
 
