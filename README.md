@@ -1,19 +1,19 @@
 # agglo
 Fast hierarchical agglomerative clustering in Javascript
 
-# Usage
+```javascript
+agglo(inputs, [options]);
+```
 
-## agglo(inputs, options)
+### inputs
 
-#### inputs
-
-Your input is an array of numbers to measure the distance between.
+An array of numbers to measure the distance between.
 
 ```javascript
 agglo([0, 1, 2]);
 ```
 
-You can also use an array numbers per each input.
+You can also use an array of arrays of numbers.
 
 ```javascript
 agglo([
@@ -30,3 +30,6 @@ agglo(db.get('users'), {
   distance: measureUserDistance
 });
 ```
+
+
+### options
