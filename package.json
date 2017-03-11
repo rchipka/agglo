@@ -1,0 +1,32 @@
+{
+  "name": "agglos",
+  "version": "0.0.1",
+  "description": "Fast hierarchical agglomerative clustering in Javascript",
+  "keywords": [
+    "hierarchical",
+    "agglomerative",
+    "clustering",
+    "machine",
+    "learning"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rchipka/agglo-js.git"
+  },
+  "author": {
+    "name": "rchipka",
+    "email": "chipka01@email.franklin.edu"
+  },
+  "scripts": {
+    "test": "node ./node_modules/.bin/nodeunit test"
+  },
+  "license": "MIT",
+  "main": "index",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "readmeFilename": "Readme.md",
+  "bugs": {
+    "url": "https://github.com/rchipka/node-osmosis/issues"
+  }
+}
