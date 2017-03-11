@@ -32,7 +32,8 @@ console.log();
       [[0, 0, 1, 5, 7, 10]],
       [[0, 0, 1, 5, 7, 10, 15]],
       [input]
-    ]
+    ],
+    indexes: false
   },
   {
     linkage: 'single',
@@ -45,7 +46,8 @@ console.log();
       [[0, 0, 1, 5, 7, 10]],
       [[0, 0, 1, 5, 7, 10, 15]],
       [input]
-    ]
+    ],
+    indexes: false
   },
   {
     linkage: 'complete',
@@ -58,7 +60,8 @@ console.log();
       [[0, 0, 1, 5, 7], [10, 15]],
       [[0, 0, 1, 5, 7, 10, 15]],
       [input]
-    ]
+    ],
+    indexes: false
   }
 ].forEach(function (test, index, tests) {
   console.log(
