@@ -1,5 +1,5 @@
 {
-  "name": "agglos",
+  "name": "agglo",
   "version": "0.0.1",
   "description": "Fast hierarchical agglomerative clustering in Javascript",
   "keywords": [
@@ -11,22 +11,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/rchipka/agglo-js.git"
+    "url": "https://github.com/rchipka/agglo.git"
   },
   "author": {
     "name": "rchipka",
     "email": "chipka01@email.franklin.edu"
   },
   "scripts": {
-    "test": "node ./node_modules/.bin/nodeunit test"
+    "test": "node test.js"
   },
   "license": "MIT",
   "main": "index",
-  "engines": {
-    "node": ">= 0.8.0"
-  },
   "readmeFilename": "Readme.md",
   "bugs": {
-    "url": "https://github.com/rchipka/node-osmosis/issues"
+    "url": "https://github.com/rchipka/agglo/issues"
   }
 }
